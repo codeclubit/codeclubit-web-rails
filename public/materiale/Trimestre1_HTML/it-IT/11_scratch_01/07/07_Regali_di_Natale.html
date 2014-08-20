@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="world"  lang="it-IT">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Regali di Natale — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Regali di Natale</h1>
+      <span class="level-indicator">Level 2</span>
+    </header>
+
+    
+
+    <main class="main lesson-steps" role="main">
+<section id="introduzione" class="level1 intro">
+<h1>Introduzione</h1>
+<p>In questo progetto creiamo un gioco con uno sfondo scorrevole, con un punteggio e con una schermata di Game Over</p>
+<p>Un incidente in una fabbrica di giocattoli ha scagliato moltissimi regali nel cielo, aiuta la renna Rudolph a recuperare quanti piu' regali di Natale possibile!</p>
+<p><img src="07_Regali_di_Natale_screenshot.png" alt="screenshot" /></p>
+<div class="pagebreak"></div>
+
+
+</section>
+<section id="passo-1-fai-volare-rudolph" class="level1 activity">
+<h1>Passo 1: Fai volare Rudolph</h1>
+<section id="lista-delle-attivita" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Crea un nuovo progetto Scratch. Rimuovi il gatto Felix con click-destro e seleziona <strong>cancella</strong>.<br /></li>
+<li>Sostituisci lo sfondo con <strong>SfondoCielo.png</strong> dalla cartella <strong>Resources</strong><br /></li>
+<li>Aggiungi lo sprite di Rudolph (usa <strong>Rudolph.png</strong> dalla cartella <strong>Resources</strong>)<br /></li>
+<li><p>Aggiungi questo script per far si' che Rudolph segua il mouse:</p>
+<p><img src="94b483a1f9071a3757abeceaca5191c845ce9cd7.png" alt="quando si clicca su @
+vai in primo piano
+per sempre
+    raggiungi [puntatore del mouse v]" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p><strong>Fai click sulla bandierina verde e muovi il mouse</strong></p>
+<ul>
+<li>Vedi Rudolph inseguire il mouse?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<ul>
+<li>Per rendere il gioco piu' interessante aggiungiamo uno sfondo scorrevole di colline innevate. Cosi' sembrera' che Rudolph stia volando. Aggiungi un nuovo sprite (usa <strong>CollineNeve.png</strong> dalla cartella <strong>Resources</strong>)<br /></li>
+<li>Chiama lo sprite <code>neve1</code><br /></li>
+<li>Crea una nuova variabile, per tutti gli sprite, facendo click su <code>Variabili e Liste</code> e poi su <code>Crea una Variabile</code>. Chiamala <code class="blockorange">ScrollX</code>. Rimuovi il segno di spunta in modo che la variabile non appaia sullo stage. Questa variabile verra' usata per controllare come si muovono le colline<br /></li>
+<li><p>Aggiungi questo script per lo sprite <code>neve1</code>:</p>
+<p><img src="0b7607433883590e9e80ae0cec59671c1fef36f4.png" alt="quando si clicca su @
+vai dove y e (0)
+per sempre
+    vai dove x e (ScrollX)
+    cambia [ScrollX v] di (-1)
+    se &lt;(ScrollX) &lt; (-480)&gt; allora
+        porta [ScrollX v] a [0]" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-1" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>Le colline si muovono?<br /></li>
+<li>Cosa succede mentre le colline si muovono verso un'estremita' dello schermo?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-1" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<ul>
+<li>Risolviamo il problema aggiungendo delle altre colline allo stage. Fai click su <code>Carica uno sprite da un file</code> e seleziona <strong>CollineNeve.png</strong> dalla cartella <strong>Resources</strong><br /></li>
+<li>Chiamalo <code>neve2</code><br /></li>
+<li><p>Aggiungi queso script allo sprite <code>neve2</code> per far si' che le colline scorrano in modo omogeneo:</p>
+<p><img src="0522d18085e285f3f33565c13f223c0983e0c5c7.png" alt="quando si clicca su @
+vai dove y e (0)
+per sempre
+    vai dove x e &lt;(ScrollX) + [479]&gt;" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-2" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>Le colline si muovono?<br /></li>
+<li>Il problema di prima e' stato risolte?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-2" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+</section>
+</section>
+<section id="passo-2-regali-cadenti" class="level1 activity">
+<h1>Passo 2: Regali cadenti</h1>
+<section id="lista-delle-attivita-1" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Adesso aggiungiamo i regali che Rudolph deve raccogliere. Aggiungi uno sprite da un file e usa <strong>regalo.png</strong> dalla cartella <strong>Resources</strong><br /></li>
+<li>Crea una nuova variabile solo per questo sprite e chiamala <code class="blockorange">fine</code>. Fai in modo che la variabile non appaia sullo stage. Useremo questa variabile per decidere quando il regalo dovra' essere rimosso dallo schermo<br /></li>
+<li>Crea un'altra variabile solo per questo sprite e chiamala <code class="blockorange">velocita'</code>. Fai in modo che la variabile non appaia sullo stage. Useremo questa variabile per controllare la velocita' con cui i regali cadranno dal cielo<br /></li>
+<li>Aggiungi questi script per lo sprite <strong>regalo</strong> per farlo cadere dal cielo. Nota che useremo il blocco <code class="blockgreen">numero a caso</code> per far apparire i regali in punti differenti del cielo.<br /></li>
+<li><p>Tramite il blocco <code class="blocklightblue">sta toccando [Rudolph]</code> possiamo capire quando il regalo e' stato raccolto e farlo scomparire. In modo simile possiamo anche incrementare il punteggio.</p>
+<p><img src="a4ef4ad2032b280a01c6d90902f461fb352eab91.png" alt="quando si clicca su @
+per sempre
+    porta [fine v] a [0]
+    vai a x: &lt;numero a caso tra (-230) e (230)&gt; y: &lt;numero a caso tra (50) e (170)&gt;
+    porta [velocita&#39; v] a [-1]
+    ripeti fino a quando &lt;[fine v] = [1]&gt;
+        cambia y di (velocita&#39;)
+        se &lt;([posizione y v] di [regalo v]) &lt; [-160]&gt; allora
+            porta [fine v] a [1]
+        fine
+        se &lt;sta toccando [Rudolph v]&gt; allora
+            porta [fine v] a [1]
+        fine" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-3" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>I regali cadono dal cielo?<br /></li>
+<li>Scompaiono quando Rudolph li raccoglie o quando toccalo terra?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-3" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<ul>
+<li>Rendiamoil gioco piu' interessante cambiando il colore dei regali ogni volta che cadono dal cielo. Fai questo usando il blocco <code class="blockpurple">cambia effetto [colore v]</code><br /></li>
+<li><p>Fai cadere i regali a velocita' diverse cambiando il blocco <code class="blockorange">porta velocita a -1</code> con il blocco <code class="blockgreen">numero a caso</code>. Prova diversi valori per esempio tra <strong>-10</strong> e <strong>-1</strong>. Lo script deve essere come questo</p>
+<p><img src="5e19cab33a16e5c1c61dcd2276577b715004596f.png" alt="quando si clicca su @
+per sempre
+    porta [fine v] a [0]
+    vai a x: &lt;numero a caso tra (-230) e (230)&gt; y: &lt;numero a caso tra (50) e (170)&gt;
+    cambia effetto [colore v] di (numero a caso tra (1) e (100))
+    porta [velocita&#39; v] a (numero a caso tra (-10) e (-1))
+    ripeti fino a quando &lt;[fine v] = [1]&gt;
+        cambia y di (velocita&#39;)
+        se &lt;([posizione y v] di [regalo v]) &lt; [-160]&gt; allora
+            porta [fine v] a [1]
+        fine
+        se &lt;sta toccando [Rudolph v]&gt; allora
+            porta [fine v] a [1]
+        fine" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-4" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>I regali cadono dal cielo a diverse velocita' e con colori diversi?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-4" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<div class="pagebreak"></div>
+
+
+</section>
+</section>
+<section id="passo-3-punteggio-ed-effetti-sonori" class="level1 activity">
+<h1>Passo 3: Punteggio ed effetti sonori</h1>
+<section id="lista-delle-attivita-2" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Modifichiamo il nostro script in modo da tenere un punteggio. Questo verra' poi usato dopo per capire quando il gioco e' finito e' visuallizare la schermata di Game Over<br /></li>
+<li>Crea una nuova variabile per tutti gli sprite chiamala <code class="blockorange">punteggio</code>. Fai in modo che questa variabile appaia sullo stage.<br /></li>
+<li><p>Cambia lo script per ilr egalo in questo modo. Nota che abbiamo aggiungo un effetto sonoro con il blocco <code class="blockpink">suona tamburo</code> e anche incrementato il punteggio della partita con il blocco <code class="blockorange">cambia [punteggio ] di 1</code></p>
+<p><img src="39b47839b605a90b8fa9071defb7bb034384a4e9.png" alt="quando si clicca su @
+per sempre
+    porta [fine v] a [0]
+    vai a x: &lt;numero a caso tra (-230) e (230)&gt; y: &lt;numero a caso tra (50) e (170)&gt;
+    cambia effetto [colore v] di (numero a caso tra (1) e (100))
+    porta [velocita&#39; v] a (numero a caso tra (-10) e (-1))
+    ripeti fino a quando &lt;[fine v] = [1]&gt;
+        cambia y di (velocita&#39;)
+        se &lt;([posizione y v] di [regalo v]) &lt; [-160]&gt; allora
+            suona tamburo [57 v] per (0,2) battute
+            porta [fine v] a [1]
+        fine
+        se &lt;sta toccando [Rudolph v]&gt; allora
+            suona tamburo [39 v] per (+2) battute
+            porta [fine v] a [1]
+            cambia [punteggio v] di [1]
+        fine" /></p></li>
+</ul>
+<p>Aggiungiamo un po' di musica al gioco:</p>
+<ul>
+<li><p>Seleziona lo stage. Carica un suono da un file ed usa <strong>Jingle_Bells.mp3</strong> dalla cartella <strong>Resources</strong></p>
+<p><img src="a4c052008aff980e32b33dd0d7485860ac19b945.png" alt="quando si clicca su @
+porta [ScrollX] a [0]
+porta [punteggio v] a [0]
+produci suono [Jingle_Bells v]" /></p></li>
+<li><p>Crea questo script per lo stage. Il punteggio sara' inizializzato a 0 all'inizio del gioco e Jingle Bells sara' suonato durante lo svolgimento del gioco.</p></li>
+</ul>
+<p>Nota che se la musica non viene riprodott correttamente devi salvare il tuo progetto, chudere Scratch e riaprire il progetto.</p>
+</section>
+<section id="verifica-il-tuo-progetto-5" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>Vedi il punteggio cambiare qundo Rudolph raccoglie un regalo?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-5" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<div class="pagebreak"></div>
+
+
+</section>
+</section>
+<section id="passo-4-game-over" class="level1 activity">
+<h1>Passo 4: Game over</h1>
+<ul>
+<li>Cambiamo lo script in modo da considerare il punteggio della partita.Possiamo usarlo poi dopo per determinare quando visualizzare la schermata di Game Over<br /></li>
+<li><p>Cambia lo script per lo stage in modo che quando <code class="blockorange">punteggio</code> raggiunge il valore di <strong>10</strong> un messaggio {.blockyellow} di <strong>GameOver</strong> venga inviato.</p>
+<p><img src="7ffeded2404b6be5b0696a77036417f2c44bb216.png" alt="quando si clicca su @
+porta [ScrollX] a [0]
+porta [punteggio v] a [0]
+produci suono [Jingle_Bells v]
+per sempre
+    se &lt;(punteggio) = [10]&gt; allora
+        invia a tutti [GameOver v] e attendi" /></p></li>
+<li>Adesso dobbiamo aggiungere la schermata Game Over. Aggiungi uno sprite da file e usa <strong>GameOver.png</strong> dalla cartella <strong>Resources</strong><br /></li>
+<li><p><strong>Aggiungi questo script per lo sprite GameOver.</strong> La schermata verra' nascosta, all'inizio del gioco, con il blocco <code class="blockpurple">nasconditi</code> e verra' visualizzata, con il blocco <code class="blockpurple">mostrati</code> quando il messaggio <code>GameOver</code> sara' ricevuto.</p>
+<p><img src="1f5eb8a9e523285f065ae1f0d3e867c5e4f008d1.png" alt="quando si clicca su @
+nasconditi
+
+quando ricevo [GameOver v]
+vai in primo piano
+mostrati
+arresta [tutto v]" /></p></li>
+</ul>
+<div class="pagebreak"></div>
+
+
+<section id="verifica-il-tuo-progetto-6" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>Vedi il punteggio cambiare qundo Rudolph raccoglie un regalo?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-6" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+</section>
+<section id="sfida-rendi-il-gioco-piu-difficile" class="level2 challenge">
+<h2>Sfida: Rendi il gioco piu' difficile</h2>
+<ul>
+<li>Puoi far oscillare il regalo mentre cade dal cielo?<br /></li>
+<li>Puoi far cadere piu' di un regalo alla volta?<br /></li>
+<li>Fai apparire il messaggio di Game Over dopo aver raccolto 20 regali<br /></li>
+<li>Puoi ridurre il punteggio di 1 quando Rudolph non riesce a raccogliere un regalo e cade per terra?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-7" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<p>Ben fatto!!! Hai finito con questo esercizio. Adesso divertiti con il tuo nuovo gioco!!!</p>
+<p>Ehi, non dimenticare che puoi condividere il tuo gioco con tutti i tuoi amici e familiari. Basta che fai selezioni il menu File e poi <strong>Share to website</strong>!!</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-53881723-1']);
+      _gaq.push(['_setDomainName', 'codeclubit.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

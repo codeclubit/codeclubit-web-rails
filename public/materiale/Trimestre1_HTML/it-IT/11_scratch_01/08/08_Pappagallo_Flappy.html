@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html class="world"  lang="it-IT">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Pappagallo Flappy — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Pappagallo Flappy</h1>
+      <span class="level-indicator">Level 2</span>
+    </header>
+
+    
+
+    <main class="main lesson-steps" role="main">
+<section id="introduzione" class="level1 intro">
+<h1>Introduzione</h1>
+<p>In questo progetto creaiamo la nostra versione del famosissimo gioco per mobile chiamato Flappy Bird. Questo progetto necessita di Scratch 2.0.</p>
+<p>Premi la barra spaziatrice per far sbattere le ali al pappagallo Flappy e farlo volare attraverso gli i tubi tagliati!</p>
+<p><img src="08_Pappagallo_Flappy_screenshot.png" alt="screenshot" /></p>
+<div class="pagebreak"> </div>
+
+
+</section>
+<section id="passo-1-fai-cadere-flappy" class="level1 activity">
+<h1><strong>Passo 1:</strong> Fai cadere Flappy</h1>
+<section id="lista-delle-attivita" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Crea un nuovo progetto Scratch. Rimuovi il gatto Felix con click-destro e seleziona <strong>cancella</strong>.<br /></li>
+<li>Sostituisci lo sfondo con lo sfondo <strong>desert</strong> presente nella categoria <strong>Natura</strong> della libreria di Scratch<br /></li>
+<li>Aggiungi il pappagalli Flappy. Devi aggiungere uno sprite con due costumi. Uno per ali-su ed uno per ali-giu. Lo sprite <strong>Parrot</strong> nella categoria <strong>Animali</strong> della libreria di Scratch va benissimo<br /></li>
+<li>Cambia il nome dello sprite in <strong>flappy</strong><br /></li>
+<li><p>Crea un nuovo script per flappy:</p>
+<p><img src="b0b442952c5f81bbdf2f17b19238c4a669e477c4.png" alt="quando si clicca su @
+vai a x: (-50) y: (0)
+per sempre
+    cambia y di (-3)" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-progetto" class="level2 flag">
+<h2>Verifica il progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>Flappy inizia a volare al centro dello schermo e poi cade giu'?</li>
+</ul>
+</section>
+<section id="salva-il-progetto" class="level2 save">
+<h2>Salva il progetto</h2>
+<div class="pagebreak"> </div>
+
+
+</section>
+</section>
+<section id="passo-2-fai-volare-flappy" class="level1 activity">
+<h1><strong>Passo 2:</strong> Fai volare Flappy</h1>
+<p>Vogliamo che flappy voli in alto quando premi la barra spaziatrice</p>
+<section id="lista-delle-attivita-1" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Fai click sul tab <strong>Costumi</strong> e chiama i costumi con <strong>ali-su</strong> e <strong>ali-giu</strong>.<br /></li>
+<li><p>Adesso torna al tab <strong>Script</strong> ed aggiungi questo script:</p>
+<p><img src="84b2e2d78316f50397ee202e58ee7a42068dc2f1.png" alt="quando si preme il tasto [spazio v]
+passa al costume [ali-giu v]
+ripeti (10) volte
+    cambia y di (6)
+fine
+passa al costume [ali-giu v]
+ripeti (10) volte
+    cambia y di (6)
+fine" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-progetto-1" class="level2 flag">
+<h2>Verifica il progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>Riesci a controllare flappy con la barra spaziatrice?<br /></li>
+<li>Noti che qualche volta premi spazio ma flappy non si muove?<br />Ok risolveremo questo problema dopo...</li>
+</ul>
+</section>
+<section id="salva-il-progetto-1" class="level2 save">
+<h2>Salva il progetto</h2>
+<div class="pagebreak"> </div>
+
+
+</section>
+</section>
+<section id="passo-3-aggiusta-i-controlli" class="level1 activity">
+<h1><strong>Passo 3:</strong> Aggiusta i controlli</h1>
+<p>Ci piacerebbe che flappy rispondesse ai nostri comandi ogni volta che premiamo spazio. Quando premiamo spazio flappy inizia due cicli di movimento. Se premiamo spazio dinuovo prima che i loop siano finiti Scratch ignora la seconda pressione del tasto spazio. Per risolvere questo problema dobbiamo usare una variabile che conta il numero di battiti di ali necessari.</p>
+<section id="lista-delle-attivita-2" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Stacca il blocco sotto <code class="blockbrown">quando si preme il tasto [spazio v]</code> e mettilo di lato. Lo useremo dopo<br /></li>
+<li>Crea una nuova variabile solo per flappy e chiamala <code class="blockorange">ali</code>.<br /></li>
+<li><p>Aggiungi questo script trascinando il blocco che avevi messo di lato</p>
+<p><img src="6dbbff1278ad78be5bc311bb6b0601bc4ead859d.png" alt="quando si preme il tasto [spazio v]
+porta [ali v] a [0]
+passa al costume [ali-su v]
+per sempre
+    ripeti fino a quando &lt;(ali) = [0]&gt;
+        cambia [ali v] di (-1)
+        passa al costume [ali-giu v]    
+        ripeti (10) volte
+            cambia y di (6)
+        fine
+        passa al costume [ali-su v]
+        ripeti (10) volte
+            cambia y di (6)
+        fine" /></p></li>
+<li><p>Infine aggiungi al blocco <code class="blockbrown">quando si preme il tasto [spazio v]</code>:</p>
+<p><img src="d914072dd29b017a9b5c961121738390f779e37e.png" alt="quando si preme il tasto [spazio v]
+    cambia [ali v] di (1)" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-progetto-2" class="level2 flag">
+<h2>Verifica il progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>Adesso flappy sbatte le ali ogni volta che premi spazio?</li>
+</ul>
+</section>
+</section>
+<section id="passo-4-aggiungiamo-le-tubature" class="level1 activity">
+<h1><strong>Passo 4:</strong> Aggiungiamo le tubature</h1>
+<p>Adesso aggiungiamo degli ostacoli che Flappy deve evitare</p>
+<section id="lista-delle-attivita-3" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Fai click su <code class="blockgrey">Disegna un nuovo sprite</code><br /></li>
+<li>Chiama il tuo costume con <strong>tubo</strong><br /></li>
+<li>Se il costume e' in <code class="blockgrey">modalita' Bitmap</code> fai click sul pulsante <code class="blockgrey">Converti in vettoriale</code><br /></li>
+<li>Fai click su <code class="blockgrey">Zoom -</code> cosi' da vedere tutta l'area di disegno<br /></li>
+<li>Fai click sullo strumento <code class="blockgrey">Rettangolo</code>, seleziona un colore e fai click sul <code class="blockgrey">Rettangolo pieno</code> (in basso a sinistra)<br /></li>
+<li>Fai click e crea due rettangoli, uno dall'alto verso il basso ed un altro dal basso verso l'alto, come visualizzato in figura:</li>
+</ul>
+<p><img src="pipe_design.png" alt="screenshot" /></p>
+<ul>
+<li>Puoi sfumare il colore dei rettangoli facendo click sullo strumento <code class="blockgrey">Riempi con il colore</code> e poi facendo click su <code class="blockgrey">Gradiente orizontale</code>. Scegli due tonalita' dello stesso colore per la sfumatura. Adesso fai click all'interno di ciscun rettangolo e vedrai che verra' colorato con una sfumatura dei due colori da te scelti.<br /></li>
+<li>Chiama il tuo sprite <strong>tubo</strong></li>
+</ul>
+</section>
+<section id="salva-il-progetto-2" class="level2 save">
+<h2>Salva il progetto</h2>
+</section>
+</section>
+<section id="passo-5-facciamo-muovere-le-tubature" class="level1 activity">
+<h1><strong>Passo 5:</strong> Facciamo muovere le tubature</h1>
+<p>Adesso facciamo muovere le tubature in modo casuale in modo da ostacolare il volo di Flappy.</p>
+<section id="lista-delle-attivita-4" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Fai click sullo sprite <strong>tubo</strong>* e seleziona il tab <code class="blockgrey">Scripts</code>.<br /></li>
+<li><p>Aggiungi questi script:</p>
+<p><img src="9578bdbbc717f2a7d88a041f1ec5c1a4a523e47e.png" alt="quando si clicca su @
+nasconditi
+porta dimensione al (200)%
+per sempre
+    crea clone di [me stesso v]
+    attendi (2) secondi
+
+quando vengo clonato
+vai a x:(240)  y: (numero a caso tra (-80) e (80))
+ripeti (120) volte
+    cambia x di (-4)
+fine
+elimina questo clone" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-progetto-3" class="level2 flag">
+<h2>Verifica il progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>Vedi le tubature apparire a con una fessura a diverse altezze?<br />Se e' troppo difficile far volare Flappy tra le tubature, puoi rendere la fessura tra i tubi piu' ampia. Devi editare nuovamente il costume del tubo.</li>
+</ul>
+</section>
+<section id="salva-il-progetto-3" class="level2 save">
+<h2>Salva il progetto</h2>
+</section>
+</section>
+<section id="passo-6-accorgersi-delle-collisioni-con-le-tubature" class="level1 activity">
+<h1><strong>Passo 6:</strong> Accorgersi delle collisioni con le tubature</h1>
+<p>Per rendere il gioco coinvolgente, il giocatore deve far volare Flappy attraverso le fessure nei tubi senza toccarli mai. Adesso aggiungiamo alcuni blocchi per capire quando Flappy urta qualcosa</p>
+<section id="lista-delle-attivita-5" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Aggiungiamo un effetto sonoro per quando Flappy urta i tubi. Fai click sullo sprite <strong>flappy</strong> e poi sul tab <code class="blockgrey">Suoni</code><br /></li>
+<li><code class="blockgrey">Scegli un suono dalla libreria</code> e seleziona <strong>screech</strong> dalla categoria <strong>Elettronica</strong><br /></li>
+<li>Adesso torna sullo script per Flappy<br /></li>
+<li><p>Aggiungi questo script:</p>
+<p><img src="351c09acf22e983a479eb9d196d8d956d1a97381.png" alt="
+quando si clicca su @
+attendi fino a quando ((sta toccando [bordo v]) o (sta toccando [tubo v]))
+produci suono [screech v]
+dire [Game Over! v]
+invia a tutti [GameOver v]
+arresta [tutti gli altri script dello sprite]" /></p></li>
+<li><p>Fai click sullo script del <strong>tubo</strong> ed aggiungi:</p>
+<p><img src="31348f66bf89ef53442f25da63f86c1ff1b0195a.png" alt="quando ricevo [GameOver v]
+arresta [tutti gli altri script dello sprite]" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-progetto-4" class="level2 flag">
+<h2>Verifica il progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>Il gioco finisce quando Flappy urta un tubo o il bordo dello schermo?</li>
+</ul>
+</section>
+<section id="salva-il-progetto-4" class="level2 save">
+<h2>Salva il progetto</h2>
+</section>
+</section>
+<section id="passo-7-aggiungi-il-punteggio" class="level1 activity">
+<h1><strong>Passo 7:</strong> Aggiungi il punteggio</h1>
+<p>Il giocatore fa' un punto ogni volta che riesce a far volare Flappy attraverso una tubatura</p>
+<section id="lista-delle-attivita-6" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Aggiungiamo un effetto sonoro per quando Flappy fa' un punto. Fai click sullo sprite <strong>tubo</strong> ed aggiungi un suono dalla libreria. Scegli <strong>bird</strong> dalla categoria <strong>Animali</strong><br /></li>
+<li>Torna sullo script di tubo<br /></li>
+<li>Crea una nuova variabile <code class="blockgrey">per tutti gli sprite</code> e chiamala <code class="blockorange">punteggio</code>.<br /></li>
+<li>Aggiungi un blocco per impostare il punteggio a 0 quando il gioco inizia<br /></li>
+<li>Aggiungi il blocco seguente:<br /><code>blocks  quando vengo clonato attendi fino a quando ((posizione x) &lt; ([posizione x v] di [flappy v])) cambia [punteggio v] di (1) produci suono (bird)</code></li>
+</ul>
+</section>
+<section id="verifica-il-progetto-5" class="level2 flag">
+<h2>Verifica il progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>Il punteggio viene incrementato quando Flappy passa attraverso una tubatura?</li>
+</ul>
+</section>
+<section id="salva-il-progetto-5" class="level2 save">
+<h2>Salva il progetto</h2>
+<p>Ben fatto!! Hai finito il gioco base. Ci sono altre cose che puoi fare cin il tuo gioco. Dai un'occhiata alle sfide!</p>
+</section>
+<section id="sfida-1-aggiungi-un-record" class="level2 challenge">
+<h2>Sfida 1: Aggiungi un record</h2>
+<ul>
+<li>Crea una nuova variabile e seleziona <code class="blockgrey">Cloud variable (stored on server)</code>. Chiamala <code class="blockorange">record</code><br /></li>
+<li><p>Quando il gioco e' finito controlla se devi registrare un nuovo record:</p>
+<p><img src="6349fad21bb8504ce1acc1d762f22e64d3951ec1.png" alt="quando ricevo [GameOver v]
+se &lt;(punteggio) &gt; (record)&gt; allora
+    porta [record v] a (punteggio)
+fine
+arresta [tutti gli altri script dello sprite]   " /></p></li>
+</ul>
+</section>
+<section id="verifica-il-progetto-6" class="level2 flag">
+<h2>Verifica il progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>Il record viene aggiornato correttamente?</li>
+</ul>
+</section>
+<section id="salva-il-progetto-6" class="level2 save">
+<h2>Salva il progetto</h2>
+</section>
+<section id="sfida-2-aggiungi-leffetto-gravita" class="level2 challenge">
+<h2>Sfida 2: Aggiungi l'effetto gravita'</h2>
+<p>Quando qualcosa cade solitamente non lo fa' a velocita' costante. Per questa sfida faremo cadere Flappy con un'accelerazione di gravita'.</p>
+<ul>
+<li>Aggiungi una nuova variabile solo per lo sprite flappy e chiamala <code class="blockorange">gravita'</code>.<br /></li>
+<li><p>Cambia lo script per flappy in questo modo:</p>
+<p><img src="3c5d20e608a095f3bda38e8e3abe448655f22436.png" alt="quando si clicca su @
+porta [gravita&#39; v] a [0]
+vai a x: (-50) y: (0)
+per sempre
+    cambia y di (gravita&#39;)
+    cambia [gravita&#39; v] di (-0.4)" /></p></li>
+<li><p>Cambia lo script di volo in questo modo:</p>
+<p><img src="3fdf713c53370c556758d37d0353b4d965914737.png" alt="quando si preme il tasto [spazio v]
+porta [ali v] a [0]
+passa al costume [ali-su v]
+per sempre
+    ripeti fino a quando &lt;(ali) = [0]&gt;
+        cambia [ali v] di (-1)
+        passa al costume [ali-giu v]    
+        cambia [gravita&#39; v] di (8)
+        aspetta (0.2) secondi
+        passa al costume [ali-su v]
+        aspetta (0.2) secondi" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-progetto-7" class="level2 flag">
+<h2>Verifica il progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>Adesso Flappy e' attratto verso il basso quando vola e cade?</li>
+</ul>
+</section>
+<section id="salva-il-progetto-7" class="level2 save">
+<h2>Salva il progetto</h2>
+</section>
+<section id="sfida-3-flappy-cade-per-terra" class="level2 challenge">
+<h2>Sfida 3: Flappy cade per terra</h2>
+<p>Quando il giocatore perde la partita Flappy cade a terra al fondo dello schermo</p>
+<ul>
+<li>Sostituisci il blocco <code class="blockbrown">invia a tutti GameOver</code> con <code class="blockbrown">invia a tutti cado</code><br /></li>
+<li><p>Adesso aggiungi questo script:</p>
+<p><img src="899404987672a6e7a73c534b907fb71c3bb7f011.png" alt="quando ricevo [cado v]
+ruota in senso antiorario di (5) gradi
+
+quando ricevo [cado v]
+ripeti fino a quando &lt;(posizione y) &lt; [-180]&gt;
+    cambia y di [gravita&#39; v]
+    cambia [gravita&#39; v] di (-0.4)
+fine
+nasconditi
+invia a tutti [GameOver v]" /></p></li>
+<li><p>Non dimenticarti di aggiungere il blocco <code class="blockpurple">mostrami</code> e di orientare Flappy nella giusta direzione quando il gioco inizia.</p></li>
+</ul>
+</section>
+<section id="verifica-il-progetto-8" class="level2 flag">
+<h2>Verifica il progetto</h2>
+<p><strong>Fai click sulla bandierina verde</strong></p>
+<ul>
+<li>Flappy cade per terra quando urta una tubatura?<br /></li>
+<li>Flappy riappare nella corretta posizione ed orientamento quando il gioco riprende?</li>
+</ul>
+</section>
+<section id="salva-il-progetto-8" class="level2 save">
+<h2>Salva il progetto</h2>
+<p>Ben fatto!!! Hai finito con questo esercizio. Adesso divertiti con il tuo nuovo gioco!!!</p>
+<p>Ehi, non dimenticare che puoi condividere il tuo gioco con tutti i tuoi amici e familiari. Basta che fai selezioni il menu File e poi <strong>Share to website</strong>!!</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-53881723-1']);
+      _gaq.push(['_setDomainName', 'codeclubit.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

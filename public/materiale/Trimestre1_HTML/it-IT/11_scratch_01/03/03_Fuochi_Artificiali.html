@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="world"  lang="it-IT">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Fuochi Artificiali — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Fuochi Artificiali</h1>
+      <span class="level-indicator">Level 1</span>
+    </header>
+
+    
+
+    <main class="main lesson-steps" role="main">
+<section id="introduzione" class="level1 intro">
+<h1>Introduzione</h1>
+<p>In questo progetto creiamo l'esplosione dei fuochi artificiali su una citta' Italiana.</p>
+<p><img src="fuochi_artificiali_screenshot.png" alt="screenshot" /></p>
+<div class="pagebreak"></div>
+
+
+</section>
+<section id="passo-1-crea-un-razzo-che-vola-verso-il-puntatore-del-mouse" class="level1 activity">
+<h1>Passo 1: Crea un razzo che vola verso il puntatore del mouse</h1>
+<p>Importiamo tutte le immagini necessarie per questo gioco</p>
+<section id="lista-delle-attivita" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Crea un nuovo progetto Scratch. Rimuovi il gatto Felix con click-destro e seleziona <strong>cancella</strong>.<br /></li>
+<li>Nel tab <code>Sfondi</code> aggiungi un nuovo sfondo. Fai click su <code>Carica uno sfondo da un file</code>. Vai nella cartella <code>Resources</code> e seleziona <strong>torino_sfondo.png</strong><br /></li>
+<li>Fai click su <code>Carica uno sprite da un file</code> e seleziona <strong>rocket.png</strong> dalla cartella <code>Resources</code><br /></li>
+<li><p>Rendi il razzo invisibile all'inizio del gioco</p>
+<p><img src="ec1480f2eca84358a1bb6064d5ede1de58fbdb0a.png" alt="quando si clicca su @
+nasconditi" /></p></li>
+<li><p>Adesso vogliamo che quando facciamo click il razzo voli verso il puntatore del mouse. Aggiungi il blocco <code>quando si preme il tasto spazio</code>, sotto di questo visualizza il razzo e fallo scivolare (volare) verso il puntatore del mouse</p>
+<p><img src="95bf4d8d0e01209306de10edcc612f1b1874bb8c.png" alt="quando si preme il tasto [spazio v]
+mostrati
+scivola in (1) secondi a x: (x del mouse) y: (y del mouse)" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde, posiziona il tuo mouse nello stage a premi la barra spaziatrice.</p>
+<ul>
+<li>Vedi il razzo apparire e muoversi verso il puntatore del mouse?<br /></li>
+<li>Cosa succede se muovi il mouse e premi dinuovo la barra spaziatrice?</li>
+</ul>
+</section>
+<section id="lista-delle-attivita-1" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li><p>I fuochi artificiali tipicamente non volano lateralmente, quindi facciamo in modo che il razzo si muova verticalmente dal basso su fino al puntatore del mouse. Prima di visuallizare il razzo, inserisci il blocco <code>vai a</code> in modo che il razzo vada nella parte bassa dello schermo e sia allineato con il puntatore del mouse.</p>
+<p><img src="f4e6e8755323362f913a30a431f0e23fd8e3bd27.png" alt="quando si clicca su @
+nasconditi
+
+quando si preme il tasto [spazio v]
+vai a x: (x del mouse) y: (-200)
+mostrati
+scivola in (1) secondi a x: (x del mouse) y: (y del mouse)" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-1" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde, posiziona il tuo mouse nello stage e premi la barra spaziatrice.</p>
+<ul>
+<li>Vedi il razzo apparire e muoversi dal fondo dello schermo verso il puntatore del mouse?<br /></li>
+<li>Cosa succede se muovi il mouse e premi dinuovo la barra spaziatrice?</li>
+</ul>
+</section>
+<section id="lista-delle-attivita-2" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li><p>Infine fai in modo che il razzo venga lanciato quando fai click anziche' quando premi la barra spaziatrice. Per far questo possiamo racchiudere il nostro script in un blocco <code>per sempre se fai click</code> e sostituire il blocco <code>quando si preme il tasto spazio</code> con il blocco <code>quando di clicca su bandierina</code>. Come ultimo passo assicurati che il razzo sia invisibile prima del click con il mouse.</p>
+<p><img src="7d44182c7072040e273d0b4e04cad75c46688ab0.png" alt="quando si clicca su @
+nasconditi
+per sempre
+    se &lt;tasto del mouse premuto&gt; allora
+        vai a x: (x del mouse) y: (-200)
+        mostrati    
+        scivola in (1) secondi a x: (x del mouse) y: (y del mouse)      " /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-2" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde e fai click con il mouse nello stage. Adesso fai click in un altro punto</p>
+</section>
+<section id="cose-da-provare" class="level2 try">
+<h2>Cose da provare</h2>
+<ul>
+<li>Prova a rendere alcuni razzi piu' veloci o lenti degli altri.<br /></li>
+<li>Prova a cambiare la posizione iniziale del razzo in modo che percorra un arco nel raggiungere il puntatore del mouse.</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<div class="pagebreak"></div>
+
+
+</section>
+</section>
+<section id="passo-2-fai-esplodere-il-razzo" class="level1 activity">
+<h1>Passo 2: Fai esplodere il razzo</h1>
+<section id="lista-delle-attivita-3" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li><p>Il primo passo per far esplodere il razzo e fargli emettere un boato (<strong>Resources/bang.wav</strong>) prima che inizi a volare. Quindi una volta che ha raggiunto il puntatore del mouse lo facciamo scomparire. Per importare un suono vai al tab <code>Suoni</code> e fai click su <code>Carica un suono da un file</code>.</p>
+<p><img src="00e70f7d0385bae32c25de44f287a178de7f8b16.png" alt="quando si clicca su @
+nasconditi
+per sempre
+    se &lt;tasto del mouse premuto&gt; allora
+        vai a x: (x del mouse) y: (-200)
+        produci suono [bang v]
+        mostrati    
+        scivola in (1) secondi a x: (x del mouse) y: (y del mouse)
+        nasconditi      " /></p></li>
+<li><p>Adesso fai in modo che il razzo invii un segnale nel momento in cui esplode. Dopo faremo in modo di ascoltare questo messaggio.</p>
+<p><img src="ddef964d869143b4d0b6cb599ea9145ccb7cd39d.png" alt="quando si clicca su @
+nasconditi
+per sempre
+    se &lt;tasto del mouse premuto&gt; allora
+        vai a x: (x del mouse) y: (-200)
+        produci suono [bang v]
+        mostrati    
+        scivola in (1) secondi a x: (x del mouse) y: (y del mouse)
+        nasconditi
+        invia a tutti [esploso v]       " /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-3" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde.</p>
+<ul>
+<li>Quando il razzo raggiunge il puntatore del mouse emette un boato e scompare?</li>
+</ul>
+</section>
+<section id="lista-delle-attivita-4" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Crea un nuovo sprite caricando il file <strong>Resources/firework1.png</strong><br /></li>
+<li><p>Quando lo sprite appena aggiunto, riceve il messaggio <code>esplosione</code> deve scomparire, posizionarsi sul razzo usando il blocco <code>vai a</code>, apparire per 1 secondo e poi sparire dinuovo.</p>
+<p><img src="31b9805dab79ee5524dc2bce0630a227c5c6f9e6.png" alt="quando ricevo [esploso v]
+nasconditi
+raggiungi [Rocket v]
+mostrati
+attendi (1) secondi
+nasconditi" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-4" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Lancia un altro razzo.</p>
+<ul>
+<li>Riesci a vedere il razzo che esplode ed il fuoco artificiale comparire?<br /></li>
+<li>Cosa succede se tieni premuto il tasto sinistro del mouse e contemporaneamente lo muovi? (Non ti preoccupare, risolveremo il problema dopo)</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-1" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+</section>
+</section>
+<section id="passo-3-rendi-ogni-esplosione-unica" class="level1 activity">
+<h1>Passo 3: Rendi ogni esplosione unica</h1>
+<section id="lista-delle-attivita-5" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li><p>Adesso possiamo rendere ogni esplosione unica usando il blocco <code class="blockpurple">cambia effetto colore</code> con un colore a caso compreso tra <strong>1</strong> e <strong>200</strong> prima di visualizzare il fuoco d'artificio.</p>
+<p><img src="f14ead45ea6ed323c97629bbbab942ce1f594d05.png" alt="quando ricevo [esploso v]
+nasconditi
+porta effetto [colore v] a (numero a caso tra (1) e (200))
+raggiungi [Rocket v]
+mostrati
+attendi (1) secondi
+nasconditi" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-5" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde.</p>
+<ul>
+<li>Le esplosioni sono tutte di un colore diverso?</li>
+</ul>
+</section>
+<section id="lista-delle-attivita-6" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Adesso aggiungiamo altri tipi di fuochi artificiali aggiungendo nuovi costumi per lo sprite. Usa <strong>Resources/firework2.png</strong> e <strong>Resources/firework3.png</strong> e cambia il costume per ogni razzo prima di visualizzarlo.</li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-6" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde.</p>
+<ul>
+<li>Riesci a lanciare tipi diversi di fuochi artificiale?</li>
+</ul>
+</section>
+<section id="lista-delle-attivita-7" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li><p>Infine rendiamo l'esplosione piu' grande dopo che il razzo esplode! Anziche' aspettare per 1 secondo, porta la dimensione dello sprite al <strong>5%</strong> e dopo che e' visualizzato aumenta la dimensione dello sprite di <strong>2</strong> per <strong>50</strong> volte usando un blocco <code class="blockorange">ripeti</code>.</p>
+<p><img src="390b9c9483c4c75bdf6e02fb1ac62f78309988dc.png" alt="quando ricevo [esploso v]
+nasconditi
+porta effetto [colore v] a (numero a caso tra (1) e (200))
+raggiungi [Rocket v]
+mostrati
+porta dimensione al (5) %
+ripeti (50) volte
+    cambia dimensione di (2)
+fine
+nasconditi" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-7" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde.</p>
+<ul>
+<li>L'effetto esplosivo inizia dal centro del razzo e si espande gradualmente?</li>
+</ul>
+</section>
+<section id="cose-da-provare-1" class="level2 try">
+<h2>Cose da provare</h2>
+<ul>
+<li>Perche' non provare a rendere ciascun esplosione ancora piu' unica variando la dimensione e la velocita' dell'esplosione stessa?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-2" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+</section>
+</section>
+<section id="passo-4-risolvere-il-problema-dellesplosione-incompleta" class="level1 activity">
+<h1>Passo 4: Risolvere il problema dell'esplosione incompleta</h1>
+<p>Ti ricordi che nei passi precedenti abbiamo riscontrato che tenendo premuto il pulsante del mouse l'esplosione del razzo era incompleta? Cio' succede perche' quando il razzo invia il messagio <code>esploso</code>, lo script ricomincia immediatamente e riposiziona il razzo al fondo dello schermo. Cio' avviene prima che l'esplosione si muove alla posizione del razzo.</p>
+<section id="lista-delle-attivita-8" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li><p>Per risolvere questo problema, possiamo rimpiazzare il blocco <code>invia a tutti</code> con un blocco <code>invia a tutti e attendi</code>. In questo modo il ciclo non si ripetera' finche' l'esplosione non sara' completamente terminata.</p>
+<p><img src="b9c1318dc8fc5ccbcb59cde4a413cfdfe20998cc.png" alt="quando si clicca su @
+nasconditi
+per sempre
+    se &lt;tasto del mouse premuto&gt; allora
+        vai a x: (x del mouse) y: (-200)
+        produci suono [bang v]
+        mostrati    
+        scivola in (1) secondi a x: (x del mouse) y: (y del mouse)
+        nasconditi
+        invia a tutti [esploso v] e attendi " /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-8" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde, tieni premuto il tasto sinistro del mouse and muovi il mouse in punti diversi dello stage.</p>
+<ul>
+<li>L'effetto esplosivo appare al posto giusto ed al momento giusto?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-3" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<p>Ben fatto!!! Hai finito con questo esercizio. Adesso divertiti con il tuo nuovo gioco!!!</p>
+<p>Ehi, non dimenticare che puoi condividere il tuo gioco con tutti i tuoi amici e familiari. Basta che fai selezioni il menu File e poi <strong>Share to website</strong>!!</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-53881723-1']);
+      _gaq.push(['_setDomainName', 'codeclubit.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="world"  lang="it-IT">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Felix e Albert — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Felix e Albert</h1>
+      <span class="level-indicator">Level 1</span>
+    </header>
+
+    
+
+    <main class="main lesson-steps" role="main">
+<section id="introduzione" class="level1 intro">
+<h1>Introduzione</h1>
+<p>In questo esercizio creiamo un gioco dove il gatto <strong>Felix</strong> deve inseguire e catturare il topolino <strong>Albert</strong> . Il giocatore controlla Albert con il mouse e deve cercare di evitare di essere catturato da Felix. Piu' a lungo si riesce ad evitare Felix e piu' punti si accumulano ma fai attenzione a non essere catturato perche' il tuo punteggio scendera tantissimo!</p>
+<p><img src="felixalbert_screenshot.png" alt="screenshot" /></p>
+<div class="pagebreak"></div>
+
+
+</section>
+<section id="passo-1-felix-segue-il-puntatore-del-mouse" class="level1 activity">
+<h1>Passo 1: Felix segue il puntatore del mouse</h1>
+<section id="lista-delle-attivita" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Crea un nuovo progetto.<br /></li>
+<li>Fai doppio-click nello <strong>stage</strong> vicino all'immagine (sprite) di Felix. Seleziona il tab <code>Sfondi</code> e clicca su <code>Scegli uno sfondo dalla libreria</code>. Qui seleziona lo sfondo chiamato <code>hall</code>. Adesso cancella lo sfondo bianco facendo click sulla <code>X bianca su sfondo nero in alto a destra</code><br /></li>
+<li>Adesso fai click sullo sprite di Felix. Poi fai click sulla <code>i</code> in alto a sinistra dello sprite. Cambia il nome in <strong>Felix</strong>.<br /></li>
+<li>Accertati che Felix abbia uno stile di rotazione sinistra-destra facendo click su: <img alt="" class="inline" src="flip_arrows.png">.<br /></li>
+<li>Torna indietro facendo click sulla freccia in alto a sinistra<br /></li>
+<li><p>Crea questo script per Felix:</p>
+<p><img src="71b76fb9c6e9f6bed37cbfe2d9065f15f1be5edf.png" alt="quando si clicca su @
+per sempre
+  punta verso [puntatore del mouse v]
+  fai (10) passi
+  passa al costume seguente
+  suona tamburo (3) per (0.3) battute
+end" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde.</p>
+<ul>
+<li>Felix insegue il puntatore del mouse?<br /></li>
+<li>Quando Felix si muove sembra che stia camminando?<br /></li>
+<li>Felix si muove alla giusta velocita'?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+</section>
+</section>
+<section id="passo-2-felix-insegue-albert" class="level1 activity">
+<h1>Passo 2: Felix insegue Albert</h1>
+<p>Ora vogliamo che Felix insegua il topolino Albert e non il puntatore del mouse.</p>
+<section id="lista-delle-attivita-1" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Crea un nuovo sprite facendo click su <code class="blockgrey">Scegli uno sprite dalla libreria</code> e seleziona <strong>Mouse 1</strong>.<br /></li>
+<li>Cambia il nome dello sprite in <strong>Albert</strong> facendo click sulla <code>i</code> in alto a sinistra dello sprite.<br /></li>
+<li>Passa al tab <strong>Costumi</strong> e fai click su Albert nell'editor. Un rettangolo apparira' attorno ad Albert. Tira un angolo per rendere Albert piu' piccolo di Felix.<br /></li>
+<li>Accertati che Albert abbia uno stile di rotazione sinistra-destra facendo click su: <img alt="" class="inline" src="flip_arrows.png">.<br /></li>
+<li>Torna indietro facendo click sulla freccia in alto a sinistra<br /></li>
+<li><p>Crea questo script per Albert:</p>
+<p><img src="2c688b03e9c5b07ce4ca6c75608d7b4adff9be1b.png" alt="quando si clicca su @
+per sempre
+    raggiungi [puntatore del mouse v]
+    punta verso [Felix v]
+end" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-1" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde.</p>
+<ul>
+<li>Felix insegue il puntatore del mouse?<br /></li>
+<li>Felix insegue il topolino Albert?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-1" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+</section>
+</section>
+<section id="passo-3-felix-ci-dice-quando-ha-catturato-albert" class="level1 activity">
+<h1>Passo 3: Felix ci dice quando ha catturato Albert</h1>
+<p>Vogliamo che Felix riconosca quando ha catturato Albert e ce lo dica.</p>
+<section id="lista-delle-attivita-2" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li><p>Cambia lo script per Felix in questo modo:</p>
+<p><img src="1d135295be985323bc26e4f3f321bb4a51267b53.png" alt="quando si clicca su @
+per sempre
+    punta verso [puntatore del mouse v]
+    fai (10) passi
+    passa al costume seguente
+    suona tamburo (3) per (0.3) battute
+    se &lt;sta toccando [Albert v] &gt; allora
+        dire [Preso!!!] per (1) secondi
+    end
+end" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-2" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde.</p>
+<ul>
+<li>Felix ti dice quando ha catturato Albert?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-2" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<div class="pagebreak"></div>
+
+
+</section>
+</section>
+<section id="passo-4-albert-diventa-un-fantasmino-quando-viene-catturato-da-felix" class="level1 activity">
+<h1>Passo 4: Albert diventa un fantasmino quando viene catturato da Felix</h1>
+<p>Anziche' far dire a Felix quando prende Albert vogliamo che Albert diventi un fantasmino.</p>
+<section id="lista-delle-attivita-3" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li><p>Cambia lo script per Felix in modo da inviare un messaggio quando prende Albert:</p>
+<p><img src="13b8ddf93d3516b9d3d8ee165c997e7cd92aafad.png" alt="quando si clicca su @
+per sempre
+    punta verso [puntatore del mouse v]
+    fai (10) passi
+    passa al costume seguente
+    suona tamburo (3 v) per (0.3) battute
+    se &lt;sta toccando [Albert v]&gt; allora
+        invia a tutti [preso v]
+        suona tamburo (17 v) per (0.2) battute
+        attendi (1) secondi
+    end
+end" /></p></li>
+<li>Aggiungi un nuovo costume per Albert facendo click sullo sprita e selezionando il tab <code>Costumi</code>. Da qui seleziona <code class="blocklightgrey">Scegli un costume dalla libreria</code>. Seleziona il costume <strong>ghost2-a</strong>.<br /></li>
+<li>Rendi il fantasmino piu' piccolo facendo click sullo sprite nell'editor e trascinando un angolo.<br /></li>
+<li>Cambia il nome dei costumi di Albert. Il topolino chiamalo <code>vivo</code> ed il fantasmino chiamalo <code>morto</code>.<br /></li>
+<li><p>Creau un nuovo script per Albert in modo che si trasformi in un fantasmino:</p>
+<p><img src="b1a63a626b362f341a48a9215ac9602d0e74b1d7.png" alt="quando ricevo [preso v]
+passa al costume [morto v]
+attendi (1) secondi
+passa al costume [vivo v]" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-3" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde.</p>
+<ul>
+<li>Albert si trasforma in un fantasmino quando viene catturato?<br /></li>
+<li>Senti Felix emettere il giusto suono al momento giusto?<br /></li>
+<li>Felix rimane fermo abbastanza a lungo per permettere ad Albert di fuggire?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-3" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<div class="pagebreak"></div>
+
+
+</section>
+</section>
+<section id="passo-5-manteniamo-il-punteggio" class="level1 activity">
+<h1>Passo 5: Manteniamo il punteggio</h1>
+<p>Aggiungiamo adesso un punteggio al gioco in modo da sapere quanto siamo bravi a tenere Albert in vita.</p>
+<p>Il punteggio inizia da zero e viene incrementato di 1 per ogni secondo. Se Felix riesce a catturare Albert il punteggio viene diminuito di 100 punti.</p>
+<section id="lista-delle-attivita-4" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Crea una variabile, per tutti gli sprite, che si chiama punteggio. Fai click su <code>Script</code>, poi seleziona <code>Variabili e Liste</code> e fai click su <code class="blockorange">Crea una variabile</code>. Inserisci <code>punteggio</code> come nome della variabile ed assicurati che <code>Per tutti gli sprite</code> sia selezionato.<br /></li>
+<li><p>Nello stage, crea questi due script:</p>
+<p><img src="5cff0fd0e7cc1428e02db23b3e20dac8decf6668.png" alt="quando si clicca su @
+porta [punteggio v] a (0)
+per sempre
+    cambia [punteggio v] di (1)
+    attendi (1) secondi
+end
+
+quando ricevo [preso v]
+cambia [punteggio v] di (-100)" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-4" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde.</p>
+<ul>
+<li>Il punteggio viene incrementato di 1 ogni secondo?<br /></li>
+<li>Il punteggio viene ridotto di 100 punti quando Albert e' catturato?<br /></li>
+<li>Cosa succede se Albert e' catturato ed il punteggio e' inferiore a 100?<br /></li>
+<li>Il punteggio torna a zero quando inizi una nuova partita?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-4" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<p>Ben fatto, hai finito!!! Adesso puoi finalmente divertirti con il tuo gioco!!!</p>
+<p>Ehi, non dimenticare che puoi condividere il tuo gioco con tutti i tuoi amici e familiari. Basta che fai selezioni il menu File e poi <strong>Share to website</strong>!!</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-53881723-1']);
+      _gaq.push(['_setDomainName', 'codeclubit.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

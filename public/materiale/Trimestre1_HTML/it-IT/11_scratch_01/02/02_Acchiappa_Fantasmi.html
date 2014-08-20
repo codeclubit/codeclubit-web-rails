@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="world"  lang="it-IT">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Acchiappa Fantasmi — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Acchiappa Fantasmi</h1>
+      <span class="level-indicator">Level 1</span>
+    </header>
+
+    
+
+    <main class="main lesson-steps" role="main">
+<section id="introduzione" class="level1 intro">
+<h1>Introduzione</h1>
+<p>Questo progetto e' simile al gioco da luna park chiamato whack-a-mole (colpisci la talpa). Ottieni dei punti se colpisci i fantasmi che appaiono sul video. Lo scopo del gioco e' totalizzare il piu' alto punteggio possibile in 30 secondi!!</p>
+<p><img src="acchiappa_fantasmi_screenshot.png" alt="screenshot" /></p>
+<div class="pagebreak"></div>
+
+</section>
+<section id="passo-1-crea-un-fantasma-volante" class="level1 activity">
+<h1>Passo 1: Crea un fantasma volante</h1>
+<section id="lista-delle-attivita" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Crea un nuovo progetto scratch.<br /></li>
+<li>Rimuovi lo sprite del gatto Felix (fai click con il taso destro del mouse sullo sprite e seleziona cancella) e sostituisci lo sfondo con <strong>woods</strong> del tema <strong>Natura</strong>.<br /></li>
+<li>Aggiungi un nuovo sprite facendo click su <code>Scegli uno sprite dalla libreria</code> e seleziona <strong>Ghost1</strong> nella categoria <strong>Fantasia</strong><br /></li>
+<li>Adesso vogliamo che il nostro fantasma si possa muovere. Aggiungi una <code>Variabile</code> solo per questo sprite e chiamala <code class="blockorange">velocita'</code>.<br /></li>
+<li>Nello <strong>Stage</strong> deve comparire un indicatore per questa variabile che visualizza &quot;<strong>Ghost1: velocita'</strong>&quot;. Se viene visualizzato solo &quot;velocita'&quot; allora cancella la variabile e ricreala solo per lo sprite Ghost1. Se vuoi nascondere l'indicatore della variabile rimuovi lo spunta per la variabile &quot;velocita'&quot; nella sezione <strong>Variabili e Liste</strong>. La variabile &quot;velocita'&quot; controlla la velocita' con cui il fantasma si muove. A tal scopo utilizziamo una variabile in modo che possiamo cambiare la velocita' con cui il fantsma si muove con il procedere del gioco.<br /></li>
+<li><p>Vogliamo che il fantasma inizi a muoversi all'inizio del gioco, <strong>quindi crea uno script come questo</strong>:</p>
+<p><img src="1c15f29f2829d5f6b088a9955dafa6886f6393df.png" alt="quando si clicca su @
+porta [velocita&#39; v] a [5]
+per sempre
+    fai (velocita&#39;) passi" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde e guarda come si comporta il fantasma.</p>
+<p>Perche' si ferma all'estremita' dello schermo?</p>
+</section>
+<section id="salva-il-tuo-progetto" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+</section>
+<section id="lista-delle-attivita-1" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li><p>Per evitare che il fantasma si fermi all'estremita' dello schermo, dobbiamo fargli invertire direzione quando tocca il bordo dello schermo. Modifica lo script esistente aggiungendo il blocco <code class="blockblue">rimbalza quando tocchi il bordo</code> sotto al blocco <code class="blockblue">fai</code><code class="blockorange">velocita'</code><code class="blockblue">passi</code>.</p>
+<p><img src="98b41a6aed429c17de6a9ca05385142096d045b7.png" alt="quando si clicca su @
+porta [velocita&#39; v] a [5]
+per sempre
+    fai (velocita&#39;) passi
+    rimbalza quando tocchi il bordo" /></p></li>
+<li><p>Per evitare che il fantasma appaia sottosopra, cambia lo stile di rotazione in <code>sinistra-destra</code> nell'area delle properieta' dello sprite.</p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-1" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde.</p>
+<ul>
+<li>Il fantasma si muove correttamente da un'estremita' all'altra dello schermo?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-1" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<div class="pagebreak"></div>
+
+
+
+</section>
+<section id="cose-da-provare" class="level2 try">
+<h2>Cose da provare</h2>
+<ul>
+<li>Prova a cambiare il valore della variabile <code>velocita'</code> per far volare il fantasma piu' velocemente o piu' lentamente.<br /></li>
+<li>Come puoi fare in modo che il fantasma voli piu' velocemente con il passare del tempo? (Beh questa domanda e' un po' difficile, quindi non ti preoccupare se non hai idea di come fare. Riceverai degli indizi durante lo svolgimento del progetto)</li>
+</ul>
+</section>
+</section>
+<section id="passo-2-fai-comparire-e-scomparire-il-fantasma-in-modo-casuale" class="level1 activity">
+<h1>Passo 2: Fai comparire e scomparire il fantasma in modo casuale</h1>
+<p>Per rendere il gioco piu' divertente, vogliamo che il fantasma appaia e scompaia dallo schermo in modo casuale. Otterremo questo risultato con un altro script che viene eseguito in contemporanea con lo script che muove il fantasma. Questo nuovo script rende il fantasma invisibile per un periodo di tempo casuale, poi lo fa' riapparire per un altro periodo di tempo casuale. Il tutto viene ripetuto indefinitamente o comunque fino alla fine del gioco.</p>
+<section id="lista-delle-attivita-2" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li><p>Crea questo script per il fantasma:</p>
+<p><img src="94c2e32df2440f79372c73e9de59f95c907323ff.png" alt="quando si clicca su @
+per sempre
+    nasconditi
+    attendi (numero a caso tra (2) e (5)) secondi
+    mostrati
+    attendi (numero a caso tra (3) e (5)) secondi" /></p></li>
+</ul>
+<div class="pagebreak"></div>
+
+
+</section>
+<section id="verifica-il-tuo-progetto-2" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde.</p>
+<ul>
+<li>Il fantasma si muove correttamente da un'estremita' all'altra dello schermo e contemporaneamente compare e ricompare in modo casuale?</li>
+</ul>
+</section>
+<section id="cose-da-provare-1" class="level2 try">
+<h2>Cose da provare</h2>
+<ul>
+<li>Prova a cambiare l'intervallo dei numeri casuali. Cosa succede se usi numeri molto grandi o molto piccoli? (Hai qualche indizio in piu' sul come fare che il fantasma voli piu' velocemente con il passare del tempo?)</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-2" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<div class="pagebreak"></div>
+
+
+</section>
+</section>
+<section id="passo-3-far-scomparire-il-fantasma-quando-e-colpito-click" class="level1 activity">
+<h1>Passo 3: Far scomparire il fantasma quando e' colpito (click)</h1>
+<p>Per far si che questo sia un vero gioco, dobbiamo far fare qualcosa al giocatore. Il giocatore deve colpire il fantasma, facendo click su di esso, in modo da farlo scomparire. Quando il fantasma e' colpito vogliamo che scompaia ed emetta un suono.</p>
+<section id="lista-delle-attivita-3" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Seleziona il tab <strong>Suoni</strong> ed aggiungi un nuovo suono, dalla libreria, chiamato <strong>fairydust</strong> nella categoria <strong>Elettronica</strong><br /></li>
+<li><p>Aggiungi questo script per il fantasma:</p>
+<p><img src="40faa3058994656f19837831f421f1a224369e6e.png" alt="quando si clicca questo sprite
+nasconditi
+produci suono [Fairydust v]" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-3" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde.</p>
+<ul>
+<li>Quando colpisci il fantasma scompare ed emette il suono desiderato?</li>
+</ul>
+</section>
+<section id="cose-da-provare-2" class="level2 try">
+<h2>Cose da provare</h2>
+<ul>
+<li>Chiedi al tuo istruttore se puoi registrare un tuo suono da far emettere al fantasma</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-3" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+</section>
+</section>
+<section id="passo-4-aggiungiamo-il-punteggio-e-un-timer" class="level1 activity">
+<h1>Passo 4: Aggiungiamo il punteggio e un timer</h1>
+<p>A questo punto abbiamo un fantasma, ma il nostro obiettivo finale e' creare un gioco!!! Vogliamo realizzare dei punti ogni volta che colpiamo un fantasma ma vogliamo anche che il gioco abbia un limite temporale. Possiamo usare una variabile per il punteggio ed una per la durata del gioco.</p>
+<section id="lista-delle-attivita-4" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li><p>Crea una nuova <code>Variabile</code> per tutti gli sprite e chiamala <strong>punteggio</strong>. Modifica lo script per il fantasma in modo che la variabile punteggio venga incrementata di 1 ogni volta che il fantasma e' colpito.</p>
+<p><img src="facdb72a584d27fccec0f9e73231b7dd55c6dd26.png" alt="quando si clicca questo sprite
+nasconditi
+produci suono [Fairydust v]
+cambia [punteggio v] di (1)" /></p></li>
+<li>Passa allo <strong>Stage</strong> e crea una variabile che si chiama <strong>tempo_rimanente</strong>.<br /></li>
+<li><p>Aggiungi un nuovo script che viene eseguito quando si fa click sulla bandierina verde in modo che inizializzi la variabile <code class="blockorange">tempo_rimanente</code> a <strong>30</strong> secondi. Lo script deve anche azzerare la variabile <code>punteggio</code>. Usa un ciclo <code class="blockorange">ripeti fino a quando</code> in cui aspetti 1 secondo e poi riduci di 1 la variabile <code class="blockyellow">tempo_rimanente</code>. Il ciclo deve ripetersi finche' la variabile <code>tempo_rimanente</code> assume il valore 0. A tal punto usa <code class="blockyellow">arresta tutto</code> per fermare il gioco.</p>
+<p><img src="f127f292cf0352e1c3e0c93e4f1e966fe5af8760.png" alt="quando si clicca su @
+porta [tempo rimanente v] a [30]
+porta [punteggio v] a [0]
+ripeti fino a quando &lt;(tempo rimanente) = [0]&gt;
+    attendi (1) secondi
+    cambia [tempo rimanente v] di (-1)
+fine
+arresta [tutto v]" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-tuo-progetto-4" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde.</p>
+<ul>
+<li>Il gioco finisce dopo 30 secondi?</li>
+</ul>
+</section>
+<section id="cose-da-provare-3" class="level2 try">
+<h2>Cose da provare</h2>
+<ul>
+<li>Come puoi aumentare la velocita' del fantasma con il passare del tempo?</li>
+</ul>
+</section>
+</section>
+<section id="passo-5-affronta-le-sfide" class="level1 activity">
+<h1>Passo 5: Affronta le sfide</h1>
+<p>Ben fatto!! hai completato la realizzazione del gioco base. Tuttavia ci sono molte altre cose che puoi aggiungere al tuo gioco. Prova a cimentarti con queste sfide!!!</p>
+<section id="sfida-aggiungi-altri-fantasmi" class="level2 challenge">
+<h2>Sfida: aggiungi altri fantasmi</h2>
+<p>Se un solo fantasma ve bene, tanti fantasmi sono meglio!!! Prova ad avere 3 fantasmi che volano per lo schermo.</p>
+<ol>
+<li>Duplica il fantasma facendo <strong>click con il tasto destro</strong> e seleziona <code>duplica</code><br /></li>
+<li>Per ogni nuovo fantasma aggiusta la sua dimensione in modo che siano tutti diversi.<br /></li>
+<li>Per ogni nuovo fantasma cambia la variabile <strong>velocita'</strong> cosi' che volino a velocita' diverse<br /></li>
+<li>Posiziona i fantasmi in punti diversi in modo che non si sovrappongano.</li>
+</ol>
+</section>
+<section id="salva-il-tuo-progetto-4" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<div class="pagebreak"></div>
+
+
+</section>
+<section id="verifica-il-tuo-progetto-5" class="level2 flag">
+<h2>Verifica il tuo progetto</h2>
+<p>Fai click sulla bandierina verde.</p>
+<ul>
+<li>Riesci a vedere 3 fantasmi che si muovono da una parte all'altra dello schermo, che appaiono e scompaiono in modo casuale e che scompaiono quando colpiti?</li>
+</ul>
+</section>
+<section id="cose-da-provare-4" class="level2 try">
+<h2>Cose da provare</h2>
+<ul>
+<li>Qual'e' il numero massimo di fantasmi per questo gioco?<br /></li>
+<li>Puoi far apparire i fantasmi in modo diverso? Puoi cambiare il loro costume o usare alcuni strumenti nell'editor costumi (cambia il colore degli occhi o del corpo)<br /></li>
+<li>Puoi far in modo che i fantasmi abbiano un punteggio differente quando colpiti?<br /></li>
+<li>Che ne dici di assegnare 10 punti al fantasma piu' veloce (e piccolo)?</li>
+</ul>
+</section>
+<section id="salva-il-tuo-progetto-5" class="level2 save">
+<h2>Salva il tuo progetto</h2>
+<p>Ben fatto!!! Hai finito con questo esercizio. Adesso divertiti con il tuo nuovo gioco!!!</p>
+<p>Ehi, non dimenticare che puoi condividere il tuo gioco con tutti i tuoi amici e familiari. Basta che fai selezioni il menu File e poi <strong>Share to website</strong>!!</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-53881723-1']);
+      _gaq.push(['_setDomainName', 'codeclubit.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

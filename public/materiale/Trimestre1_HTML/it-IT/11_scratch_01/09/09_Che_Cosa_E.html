@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="world"  lang="it-IT">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Che Cos'e'? — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Che Cos'e'?</h1>
+      <span class="level-indicator">Level 3</span>
+    </header>
+
+    
+
+    <main class="main lesson-steps" role="main">
+<section id="introduzione" class="level1 intro">
+<h1>Introduzione</h1>
+<p>Un oggetto casuale e' disegnato sulla lavagna in modo distorto. Devi indovinare che cos'e' facendo click sull'immagine corretta sotto la lavagna. Piu' veloce sarai piu' punti otterrai!!</p>
+<p><img src="09_Che_Cosa_E_screenshot.png" alt="screenshot" /></p>
+<div class="pagebreak"></div>
+
+
+</section>
+<section id="passo-1-disegna-oggetti-diveris-sulla-lavagna" class="level1 activity">
+<h1>Passo 1: Disegna oggetti diveris sulla lavagna</h1>
+<p>Vogliamo disegnare delle immagini diverse tra loro sulla lavagna.</p>
+<section id="lista-delle-attivita" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Crea un nuovo progetto Scratch. Rimuovi il gatto Felix con click-destro e seleziona <strong>cancella</strong>.<br /></li>
+<li>Sostituisci lo sfondo con lo sfondo <strong>chalkboard</strong> presente nella categoria <strong>Interni</strong> della libreria di Scratch<br /></li>
+<li>Crea un nuovo sprite usando la libreria di Scratch. Puoi usare il costume che vuoi. Guarda nella categoria <strong>Cose</strong><br /></li>
+<li>Posizione il nuovo sprite al centro della lavagna. Ingrandiscilo o rimpiccioliscilo se necessario.<br /></li>
+<li>Fai click sul tab <code>Costumi</code> e importa altri quattro costumi. Scegli dalla categoria <strong>Cose</strong> in base a cio' che preferisci tu.<br /></li>
+<li><p>Adesso creiamo lo script che fa' apparire un'immagine a caso</p>
+<p><img src="642b589fdfcce2f151ae2bae078f2d9e721840fe.png" alt="quando si clicca su @
+ripeti (numero a caso tra (1) e (5)) volte
+    passa al costume seguente
+fine" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-progetto" class="level2 flag">
+<h2>Verifica il progetto</h2>
+<p><strong>Fai click sulla bandierina verde.</strong></p>
+<ul>
+<li>Vedi lo sprite con un costume diverso?</li>
+</ul>
+<p><strong>Fai click sulla bandierina un po' di volte</strong></p>
+<ul>
+<li>Lo sprite cambia costume ogni volta? Alcune volte puoi vedere lo stesso costume due volte di fila, ma e' ok. Dovresti vedere anche lo sprite lampeggiare mentre cambia costume. Riolveremo questo problema successivamente.</li>
+</ul>
+</section>
+<section id="salva-il-progetto" class="level2 save">
+<h2>Salva il progetto</h2>
+</section>
+</section>
+<section id="passo-2-distorciamo-loggetto" class="level1 activity">
+<h1>Passo 2: Distorciamo l'oggetto</h1>
+<p>Rendiamo un immagine difficile da riconoscere quando appare e con il passare del tempo rendiamola sempre piu' riconoscibile.</p>
+<p>Usiamo una variabile per il punteggio e per controllare il livello di distorsione. Se il punteggio e' alto allora ci sara' molta distorsione. Man mano che il punteggio scende anche l'immagine diventera' piu' chiara e riconoscibile.</p>
+<section id="lista-delle-attivita-1" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<ul>
+<li>Crea una variabile <code>punteggio</code> per tutti gli sprite<br /></li>
+<li><p>Cambia lo script in questo modo:</p>
+<p><img src="b23afb447a69d979cdc1a6fe1c81418365541d33.png" alt="quando si clicca su @
+nasconditi
+ripeti (numero a caso tra (1) e (5)) volte
+    passa al costume seguente
+fine
+ripeti fino a quando ((punteggio) = (0))
+    cambia [punteggio v] di [-10]
+    porta effetto [effetto pixel v] a (punteggio)
+    porta effetto [colore v] a (punteggio)
+    mostrati
+    attendi (1) secondi
+fine" /></p></li>
+</ul>
+<p>Aggiungi, dopo il blocco <code class="blockpurple">nasconditi</code>, un blocco che imposta il punteggio a 110 (usa il blocco <code class="blockorange">porta punteggio a</code>)</p>
+</section>
+<section id="verifica-il-progetto-1" class="level2 flag">
+<h2>Verifica il progetto</h2>
+<p><strong>Fai click sulla bandierina verde.</strong></p>
+<ul>
+<li>Vedi un immagine casuale e distorta sulla lavagna?<br /></li>
+<li>Vedi la distorsione ridursi?<br /></li>
+<li>Vedi il punteggio scendere e l'immagine meno distorta?<br /></li>
+<li>Quando il punteggio raggiunge 0 vedi un'immagine senza distorsione?<br /></li>
+<li>Ogni volta che premi la bandierina verde, ottieni sempre un'immagine diversa dalla precedenta?</li>
+</ul>
+</section>
+<section id="cose-da-provare" class="level2 try">
+<h2>Cose da provare</h2>
+<ul>
+<li>Prova a cambiare il punteggio iniziale e di quanto viene decrementato ad ogni ciclo. Questo cambiamento cambia il modo in cui l'immagine viene disegnata? E' piu' difficile o facile riconoscere l'oggetto sulla lavagna?<br /></li>
+<li>Prova ad usare qualche altro effetto grafico nel blocco <code class="blockpurple">porta effetto</code>. La difficolta' del gioco cambia?</li>
+</ul>
+</section>
+<section id="salva-il-progetto-1" class="level2 save">
+<h2>Salva il progetto</h2>
+<div class="pagebreak"></div>
+
+
+</section>
+</section>
+<section id="passo-3-fai-indovinare-loggetto-al-giocatore" class="level1 activity">
+<h1>Passo 3: Fai indovinare l'oggetto al giocatore</h1>
+<p>A questo punto abbiamo un'immagine casuale disegnata sulla lavagna che lentamente diventa sempre piu' nitida e un punteggio che diminuisce con il passare del tempo. Come si fa' a vincere la partita? Aggiungeremo alcuni sprite sotto la lavagna ed il giocatore dovra' fare click su quello giusto vincendo la partita. Se invece fara' click sull'oggetto errato scomparira' immediatamente.</p>
+<section id="lista-delle-attivita-2" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<p>Prima di tutto dobbiamo sapere qual'e' la risposta esatta.</p>
+<ul>
+<li>Crea una nuova variabile per tutti gli sprite chiamara <code>risposta esatta</code>.<br /></li>
+<li><p>Cambia lo script per memorizzare la risposta esatta. Aggiungi il blocco <code class="blockorange">porta [risposta esatta v] a (numero costume)</code> dopo il primo loop:</p>
+<p><img src="a9f4d8c215b2b22e8756b365d729431796bb63a7.png" alt="quando si clicca su @
+nasconditi
+ripeti (numero a caso tra (1) e (5)) volte
+    passa al costume seguente
+porta [risposta esatta v] a (numero costume)
+porta [punteggio v] a (110)
+ripeti fino a quando ((punteggio) = (0))
+    cambia [punteggio v] di [-10]
+    porta effetto [effetto pixel v] a (punteggio)
+    porta effetto [colore v] a (punteggio)
+    mostrati
+    attendi (1) secondi
+fine" /></p></li>
+</ul>
+<p>Adesso aggiungiamo gli sprite sotto la lavagna:</p>
+<ul>
+<li>Duplica lo sprite principale e trascina la copia sotto la lavagna a sinistra<br /></li>
+<li>Rinomina questo sprite in <strong>risposta1</strong>.<br /></li>
+<li>Cancella lo script per lo sprite <code>risposta1</code>.<br /></li>
+<li>Cancella tutti i costumi di <code>risposta1</code> tranne il primo<br /></li>
+<li>Ripeti questi 4 passi per un nupovo sprite chiamato <strong>risposta2</strong>. Allinealo alla destra di <code>risposta1</code>. Questa volta cancella tutti i costumi tranne il secondo.<br /></li>
+<li>Ripeti il tutto altre 3 volte per gli sprite <strong>risposta3</strong>, <strong>risposta4</strong> e <strong>risposta5</strong>. Nessuno degli sprite <code>risposta</code> deve avere uno script<br />Alla fine dovresti avere 5 sprite in fila, uno accanto all'altro sotto la lavagna, che rappresentano i 5 costumi dello sprite principale.</li>
+</ul>
+<p>Adesso vogliamo che ogni sprite <code>risposta</code> sia capace di reagire quando il giocatore gli fa click sopra e di fare qualcosa in base alla risposta (giusta o sbagliata)</p>
+<ul>
+<li><p>Aggiungi questo script allo sprite <code>risposta1</code>:</p>
+<p><img src="3882f598f9bcad490b0433a34ab9356678a638aa.png" alt="quando si clicca questo sprite
+se &lt;(risposta esatta) = [1]&gt; allora
+    invia a tutti [vinto v]
+altrimenti
+    nasconditi
+fine" /></p></li>
+<li>Trascina e copia lo script per ogni altro sprite <code>risposta</code><br /></li>
+<li><p>Adesso dobbiamo aggiungere un blocco che risponde al messaggio <code>vinto</code>. Vai allo script dello sprite principale ed aggiungi questa logica allo script:</p>
+<p><img src="95c66124ef07d7b516fb5c054f3e16ab9604c1f3.png" alt="quando ricevo [vinto v]
+dire (unione di  [Congratulazioni! Il tuo punteggio e&#39;:] e [punteggio])" /></p></li>
+</ul>
+</section>
+<section id="verifica-il-progetto-2" class="level2 flag">
+<h2>Verifica il progetto</h2>
+<p><strong>Fai click sulla bandierina verde.</strong></p>
+<ul>
+<li>Quando fai i test del tuo gioco puoi visualizzare la variabile <strong>risposta esatta</strong> sullo stage in modo da verificare quale e' la risposta esatta.<br /></li>
+<li>Cosa succede quando fai click sulla risposta esatta (sprite)?<br /></li>
+<li>Cosa succede quando fai click sulla risposta errata (sprite)?<br /></li>
+<li>Cosa succede alla risposta errata quando inizi una nuova partita?</li>
+</ul>
+</section>
+<section id="lista-delle-attivita-3" class="level2 check">
+<h2>Lista delle Attivita'</h2>
+<p>Il test del gioco evidenzia due problemi. Primo, le risposte errate non vengono visualizzate nella prossima partita. Secondo, il punteggio non si ferma quando indoviniamo la risposta esatta.</p>
+<ul>
+<li><p>Per risolvere il primo problema, aggiungi questo script ai 5 sprite <code>risposta</code>:</p>
+<p><img src="614e4a3e12b14e368e061295e9aff1a4f829f529.png" alt="quando si clicca su @
+mostrati" /></p></li>
+</ul>
+<p>Per risolvere il secondo problema dobbiamo fermare il ciclo <code>ripeti fino a quando</code> quando il giocatore indovina la risposta esatta. Usiamo una nuova variabile chiamata <code>vinto</code> che inizializziamo a <strong>zero</strong> all'inizio del gioco e ad <strong>uno</strong> quando si vince il gioco. Il ciclo dovra' fermarsi quando il punteggio raggiunge lo 0 oppure la variabile <code>vinto</code> assume valore 1.</p>
+<ul>
+<li>Crea ua nuova variabile chiamata <code>vinto</code><br /></li>
+<li><p>Cambia lo script dello sprite principale in questo modo:</p></li>
+<li>Create a new variable called won?<br /></li>
+<li><p>Change the scripts so they look like this:</p>
+<p><img src="728b0856a431fe88eebd5a2696bf9888425ff03c.png" alt="quando si clicca su @
+nasconditi
+ripeti (numero a caso tra (1) e (5)) volte
+    passa al costume seguente
+fine
+porta [risposta esatta v] a (numero costume)
+porta [punteggio v] a (110)
+porta [vinto v] a (0)
+ripeti fino a quando &lt;&lt;(punteggio) = (0)&gt; o &lt;(vinto) = (1)&gt;&gt;
+    cambia [punteggio v] di [-10]
+    porta effetto [effetto pixel v] a (punteggio)
+    porta effetto [colore v] a (punteggio)
+    mostrati
+    attendi (1) secondi
+fine
+
+quando ricevo [vinto v]
+porta [vinto v] a [1]
+rimuovi effetti grafici
+dire (unione di  [Congratulazioni! Il tuo punteggio e&#39;:] e [punteggio])" /></p></li>
+</ul>
+</section>
+<section id="salva-il-progetto-2" class="level2 save">
+<h2>Salva il progetto</h2>
+<p><strong>Ben Fatto!! Hai finito il gioco base!</strong></p>
+<p>Ci sono altre cose che puoi fare cin il tuo gioco. Dai un'occhiata alle sfide!</p>
+<div class="pagebreak"></div>
+
+
+</section>
+<section id="sfida-1-rendi-il-gioco-piu-facile-o-difficile" class="level2 challenge">
+<h2>Sfida 1: Rendi il gioco piu' facile o difficile</h2>
+<p>Cambia la difficolta' del gioco.</p>
+<ul>
+<li>Prova a cambiare la velocita' con cui l'immagine diventa nitida e la velocita' di decremento del punteggio<br /></li>
+<li>Prova a cambiare il livello di distorsione dell'immagine<br /></li>
+<li>Prova a cambiare le immagini che devono essere indovinate rendendoli piu' simili tra loro o diverse tra loro. Se lo fai ricordati di cambiare i costumi delle risposte/</li>
+</ul>
+</section>
+<section id="salva-il-progetto-3" class="level2 save">
+<h2>Salva il progetto</h2>
+</section>
+<section id="sfida-2-distorci-limmagine-in-modo-diverso-per-ogni-partita" class="level2 challenge">
+<h2>Sfida 2: Distorci l'immagine in modo diverso per ogni partita</h2>
+<p>Attualmente per ogni partita viene usato lo stesso livello di distorsione. Nel passo 2 hai provato diversi livelli di distorsione.</p>
+<p>Cerca altri livelli di distorsione che sono adeguati al gioco.</p>
+<p>Cambia lo script in modo che un livello diverso di distorsione sia usato nel ciclo <code>ripeti fino a quando</code></p>
+<p><strong>Suggerimento:</strong> Prova a creare una nuova variabile chiamata <code>distorsione</code>. Assegnale un valore casuale all'inizio del gioco. Usa dei blocchi <code>se</code> dentro il ciclo <code>ripeti fino a quando</code> in modo da applicare il corretto livello di distorsione per la partita.</p>
+</section>
+<section id="salva-il-progetto-4" class="level2 save">
+<h2>Salva il progetto</h2>
+</section>
+<section id="sfida-3-crea-dei-livelli-per-il-gioco" class="level2 challenge">
+<h2>Sfida 3: Crea dei livelli per il gioco</h2>
+<p>Attualmente ogni partita e' indipendente dalle altre. Modifica il gioco in modo che ci siano piu' livelli nella stessa partita. Per esempio, fai 3 livelli in una stessa partita, cosi' che il giocatore deve indovinare 3 immagini diverse e puo' raggiungere un punteggio di 300 punti.</p>
+<p><strong>Suggerimento:</strong> Aggiungi un'altra variabile per tener traccia del punteggio totale per i diversi livelli. Hai anche bisogno di un ciclo per avere piu' livelli.</p>
+<p><strong>Suggerimento:</strong> Devi anche fare in modo che le risposte errate riappaiano all'inizio di un nuovo livello. Potresti forse usare un messaggio <code>invia a tutti</code>?</p>
+</section>
+<section id="salva-il-progetto-5" class="level2 save">
+<h2>Salva il progetto</h2>
+</section>
+<section id="sfida-4-crea-livelli-di-difficolta-crescente" class="level2 challenge">
+<h2>Sfida 4: Crea livelli di difficolta' crescente</h2>
+<p>Man mano che sali di livello rendi il gioco piu' difficile.</p>
+<p>Ogni livello deve per forza avere lo stesso punteggio? Dovresti forse assegnare piu' punti per il livelli piu' difficili?</p>
+<p><strong>Suggerimento:</strong> Come fai a sapere in che livello sei? Come puoi usare questa informazione per aumentare la difficolta' ed il punteggio?</p>
+</section>
+<section id="salva-il-progetto-6" class="level2 save">
+<h2>Salva il progetto</h2>
+<div class="pagebreak"></div>
+
+
+</section>
+<section id="sfida-5-continua-a-giocare-finche-il-giocatore-da-risposte-errate" class="level2 challenge">
+<h2>Sfida 5: Continua a giocare finche' il giocatore da risposte errate</h2>
+<p>Anziche' usare un numero fisso di livelli, lascia giocare il gioco finche' la risposta esatta viene indovinata.</p>
+</section>
+<section id="salva-il-progetto-7" class="level2 save">
+<h2>Salva il progetto</h2>
+</section>
+<section id="sfida-6-rendi-il-gioco-piu-facile-o-difficile-in-base-allabilita-del-giocatore" class="level2 challenge">
+<h2>Sfida 6: Rendi il gioco piu' facile o difficile in base all'abilita' del giocatore</h2>
+<p>Anziche' rendere il gioco sempre piu' difficile, fai in modo che il gioco si adatti in base alle capacita' del giocatore. Se l'immagine viene indovinata velocemnete, rendi il prossimo livello piu' difficile. Se la risposta viene sbagliata o e' troppo lenta rendi il prossimo livello piu' semplice.</p>
+<p>Questa idea funziona solamente se non sommi il punteggio di tutti i livelli.</p>
+</section>
+<section id="salva-il-progetto-8" class="level2 save">
+<h2>Salva il progetto</h2>
+</section>
+<section id="sfida-7-memorizza-il-record-del-gioco" class="level2 challenge">
+<h2>Sfida 7: Memorizza il record del gioco</h2>
+<p>Tieni traccia del record di punteggio del gioco. Se viene superato chiedi il nome del giocatore e aggiorna la tabella dei record. Assicurati che il nome del giocatore ed il punteggio record vengano visualizzati.</p>
+</section>
+<section id="salva-il-progetto-9" class="level2 save">
+<h2>Salva il progetto</h2>
+</section>
+<section id="sfida-8-penalizza-le-risposte-sbagliate" class="level2 challenge">
+<h2>Sfida 8: Penalizza le risposte sbagliate</h2>
+<p>A questo punto non c'e' nessuno svantaggio nel dare risposte sbagliate. Cambia il gioco in modo che quano viene data una risposta sbagliata il punteggio viene diminuito.</p>
+<p>Pensi che il gioco sia migliore cosi'?</p>
+</section>
+<section id="salva-il-progetto-10" class="level2 save">
+<h2>Salva il progetto</h2>
+<p>Ben fatto!!! Hai finito con questo esercizio. Adesso divertiti con il tuo nuovo gioco!!!</p>
+<p>Ehi, non dimenticare che puoi condividere il tuo gioco con tutti i tuoi amici e familiari. Basta che fai selezioni il menu File e poi <strong>Share to website</strong>!!</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-53881723-1']);
+      _gaq.push(['_setDomainName', 'codeclubit.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
