@@ -10,7 +10,9 @@ CodeClubWorld.makeMap = function() {
   var el = document.getElementById('map');
   if (!el) return;
 
-  var url = CodeClubWorld.api + '/clubs?limit=' + CodeClubWorld.limit;
+  //var url = CodeClubWorld.api + '/clubs?limit=' + CodeClubWorld.limit;
+  var url = 'http://www.codeclubit.org/api/clubs.json'
+
 
   $.getJSON(url).then(function(data) {
     var clubs = data.clubs,
