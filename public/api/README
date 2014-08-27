@@ -1,0 +1,8 @@
+in order to speed up the home page I made the list of code clubs static isntead of dynamic.
+
+this means that the club.js file must be manually updated periodically
+
+just run this script
+
+update_clubs.sh
+
