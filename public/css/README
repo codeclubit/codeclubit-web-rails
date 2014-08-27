@@ -1,0 +1,11 @@
+if you change any of the below file
+
+application.css
+codeclubit.css
+style.css
+
+you need to regenerate single.css in this way
+
+cat application.css codeclubit.css style.css > single.css
+
+
