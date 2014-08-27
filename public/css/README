@@ -8,4 +8,8 @@ you need to regenerate single.css in this way
 
 cat application.css codeclubit.css style.css > single.css
 
+then minimize with
+
+yui-compressor single.css > single_min.css
+
 
